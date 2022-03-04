@@ -1,2 +1,235 @@
-/* Обнуление */
+/* &display=swap */ 
+
 @import "null.css";
+
+/* todo: Подключение шрифтоы только одним из способов или в CSS или в html . Этот вариант через Google*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap');
+
+/* todo: Если подключаем через внутренний плагин VS Code Google Fonts, то надо убирать лишнии начертания и добавлять хвостик &display=swap*/
+/* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,900&display=swap'); */
+
+@font-face{
+	font-family: "Source Sans Pro";
+	src: url('../fonts/SourceSansPro-Regular.woff2') format("woff2"), url('../fonts/SourceSansPro-Regular.woff') format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face{
+	font-family: "Source Sans Pro";
+	src: url('../fonts/SourceSansPro-Black.woff2') format("woff2"), url('../fonts/SourceSansPro-Black.woff') format("woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+body{
+	/* Все названия шрифтов заключать в кавычки */
+	font-family: "Source Sans Pro";
+	font-size: 16px;
+	max-width: 810px;
+	font-weight: 400;
+	line-height: 1.75;
+	text-align: center;
+}
+
+
+.nav .nav-link{
+	font-size: 20px;
+	color: blue;
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+.nav .active {
+	color: gray;
+	text-transform: none;
+	text-decoration: none;
+}
+.nav-title{
+	font-size: 50px;
+	text-align: center;
+	color: rgb(0, 224, 253);
+	text-shadow: 2px 1px 3px #000;
+	font-weight: 900;
+}
+
+/* text-align: Действует на текст, чтобы повлиять на строчные объекты(картинка, ссылка), нужно либо оборачивать все в контейнер div либо каждое из изображений и ссылок 
+
+color: - можно перезаписывать каждому объекту как угодно, но через обращение класса div(a) не перебивается, даже если он стоит ниже
+text-shadow: - можно перезаписывать каждому объекту как угодно, но через обращение класса div(a) не перебивается, даже если он стоит ниже
+text-transform: - можно перезаписывать каждому объекту как угодно, но через обращение класса div(a) не перебивается, даже если он стоит ниже
+line-height: - можно перезаписывать каждому объекту как угодно, но через обращение класса div(a) не перебивается, даже если он стоит ниже
+letter-spacing: и word-spacing: - можно перезаписывать каждому объекту как угодно, но через обращение класса div(a) не перебивается, даже если он стоит ниже
+white-space: - можно перезаписывать каждому объекту как угодно, но через обращение класса div(a) не перебивается, даже если он стоит ниже
+	
+
+text-indent:- можно задавать только тексту (на ссылку и картинку - НЕ ДЕЙСТВУЕТ), но через обращение класса div(a) не перебивается, даже если он стоит ниже
+
+text-decoration: - Применяется через родителя div - то невозможно отменить изменения на дочерних элементах обратившись к ним, если применяется к дочерним элементам, то родителем div тоже нельзя отменить (Не пояла смысла такой работы пока)
+*/
+
+
+/* Обраение только по классам без приоритетности */
+.article-text{
+	/* text-align: right; */
+	/* color: blanchedalmond; */
+	/* text-shadow: 1px 1px 2px rgb(76, 1, 250); */
+	/* text-decoration: line-through; */
+	/* text-transform: uppercase; */
+	/* line-height: 3; */
+	/* text-indent: 30px; */
+	/* letter-spacing: 5px; */
+	/* word-spacing: 30px; */
+	/* white-space: nowrap; */
+}
+.article-img, .article-link{
+	/* text-align: right; */
+	/* color: rgb(255, 0, 0); */
+	/* text-shadow: 1px 1px 2px rgb(25, 0, 255); */
+	/* text-decoration: line-through; */
+	/* text-transform: lowercase; */
+	/* line-height: 10; */
+	/* text-indent: 40px; */
+	/* letter-spacing: 15px; */
+	/* word-spacing: 30px; */
+}
+.article{
+	/* text-align: justify; */
+	/* color: aqua; */
+	/* text-shadow: 1px 1px 2px #000; */
+	/* text-decoration: none; */
+	/* text-transform: capitalize; */
+	/* line-height: 5; */
+	/* text-indent: 50px; */
+	/* letter-spacing: 5px; */
+	/* word-spacing: 15px; */
+	/* white-space: normal; */
+}
+
+
+/* Все ссылки и картинки выровнены по центру
+Заголовки все одного цвета размера и по центру
+Подзаголовки все одного цвета размера и выровнены по центру */
+
+.article{
+	line-height: 2.5;
+	text-indent: 30px;
+}
+.article-text{
+	text-align: justify;
+}
+
+.menu-title{
+	font-size: 30px;
+	color: blueviolet;
+	text-shadow: 1px 1px 2px rgb(21, 220, 246);
+	font-weight: 900;
+}
+.nav-list{
+	font-size: 25px;
+	line-height: 1.5;
+	text-indent: 20px;
+	text-align: left;
+}
+.nav-link{
+	color: gold;
+}
+.nav-sublist{
+	font-size: 20px;
+	text-indent: 50px;
+	word-spacing: 7px;
+}
+.nav-sublink{
+	color: green;
+}
+
+h2.title{
+	font-size: 35px;
+	color: deeppink;
+	text-shadow: 1px 2px 3px rgb(5, 5, 5);
+	text-align: center;
+	font-weight: 900;
+}
+
+.content-text{
+	text-align: right;
+	color: brown;
+}
+span{
+	color: green;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+.subject{
+	color: greenyellow;
+	text-shadow: 1px 1px 5px #000;
+	text-indent: 30px;
+}
+.subject-text{
+	text-align: justify;
+}
+
+.tema-text{
+	text-align: justify;
+	text-indent: 30px;
+	letter-spacing: 4px;
+	color: coral;
+}
+.tema-link{
+	color: fuchsia;
+	text-shadow: 1px 1px 2px rgb(0, 17, 251);
+}
+
+.subtitle-title{
+	font-size: 25px;
+	color: mediumspringgreen;
+	text-shadow: 1px 2px 2px rgb(44, 19, 19);
+	text-decoration: underline;
+	font-weight: 900;
+}
+
+.punkt-text{
+	text-align: justify;
+	text-indent: 30px;
+	word-spacing: 18px;
+}
+
+.topic-text, .topic-list{
+	text-align: justify;
+	text-indent: 20px;
+	color: cadetblue;
+}
+
+.topic-item{
+	text-indent: 50px;
+	color: rgb(255, 115, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

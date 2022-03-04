@@ -1,11 +1,17 @@
-
-*{
+/* Обнуляющий стиль */
+*,
+*::before,
+*::after{
 	margin: 0;
 	padding: 0;
 	border: 0;
 }
 li{
 	list-style: none;
+}
+a{
+		/* Наследуется цвет ссылки */
+	color: inherit;
 }
 a,
 a:visited{
@@ -27,4 +33,11 @@ img{
 	vertical-align: top;
 }
 
+body,
+html{
+	height: 100%;
+	line-height: 1;
+}
 
+
+/* =================================================================== */
