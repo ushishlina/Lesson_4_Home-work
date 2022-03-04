@@ -205,6 +205,9 @@ span{
 	text-indent: 50px;
 	color: rgb(255, 115, 0);
 }
+.topic.subtitle-title.capitalize{
+	text-transform: capitalize;
+}
 
 
 
