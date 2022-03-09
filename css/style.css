@@ -240,11 +240,12 @@ span{
 }
 
 .layout {
-	font-family: Lato;
+	font-family: "Lato";
 	font-style: normal;
 	font-size: 16px;
 	line-height: 1.6;
 	color: #424551;
+	text-align: left;
 }
 
 .title{
