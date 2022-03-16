@@ -11,6 +11,7 @@
 /* todo: Если подключаем через внутренний плагин VS Code Google Fonts, то надо убирать лишнии начертания и добавлять хвостик &display=swap*/
 /* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,900&display=swap'); */
 
+/* 
 @font-face{
 	font-family: "Source Sans Pro";
 	src: url('../fonts/SourceSansPro-Regular.woff2') format("woff2"), url('../fonts/SourceSansPro-Regular.woff') format("woff");
@@ -25,6 +26,8 @@
 	font-style: normal;
 	font-display: swap;
 }
+ */
+
 
 /* Для статьи */
 /* todo: Подключение шрифтоы только одним из способов или в CSS или в html . Этот вариант через Google*/
@@ -32,7 +35,7 @@
 
 /* todo: Если подключаем через внутренний плагин VS Code Google Fonts, то надо убирать лишнии начертания и добавлять хвостик &display=swap*/
 /* @import url(https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap); */
-
+ /* 
 @font-face{
 	font-family: "Lato";
 	src: url('../fonts/Lato-Regular.woff2') format("woff2"), url('../fonts/Lato-Regular.woff') format("woff");
@@ -54,7 +57,7 @@
 	font-style: normal;
 	font-display: swap;
 }
-
+*/
 
 .homework{
 	/* Все названия шрифтов заключать в кавычки */
