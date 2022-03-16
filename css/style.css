@@ -4,6 +4,9 @@
 
 /* todo: Подключение шрифтоы только одним из способов или в CSS или в html . Этот вариант через Google*/
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap');
+/* Для статьи */
+/* todo: Подключение шрифтоы только одним из способов или в CSS или в html . Этот вариант через Google*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 
 /* todo: Если подключаем через внутренний плагин VS Code Google Fonts, то надо убирать лишнии начертания и добавлять хвостик &display=swap*/
 /* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,900&display=swap'); */
@@ -25,7 +28,7 @@
 
 /* Для статьи */
 /* todo: Подключение шрифтоы только одним из способов или в CSS или в html . Этот вариант через Google*/
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap'); */
 
 /* todo: Если подключаем через внутренний плагин VS Code Google Fonts, то надо убирать лишнии начертания и добавлять хвостик &display=swap*/
 /* @import url(https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap); */
