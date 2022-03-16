@@ -23,6 +23,36 @@
 	font-display: swap;
 }
 
+/* Для статьи */
+/* todo: Подключение шрифтоы только одним из способов или в CSS или в html . Этот вариант через Google*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+/* todo: Если подключаем через внутренний плагин VS Code Google Fonts, то надо убирать лишнии начертания и добавлять хвостик &display=swap*/
+/* @import url(https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap); */
+
+@font-face{
+	font-family: "Lato";
+	src: url('../fonts/Lato-Regular.woff2') format("woff2"), url('../fonts/Lato-Regular.woff') format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face{
+	font-family: "Lato";
+	src: url('../fonts/Lato-Bold.woff2') format("woff2"), url('../fonts/Lato-Bold.woff') format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face{
+	font-family: "Lato";
+	src: url('../fonts/Lato-Black.woff2') format("woff2"), url('../fonts/Lato-Black.woff') format("woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+
 .homework{
 	/* Все названия шрифтов заключать в кавычки */
 	font-family: "Source Sans Pro";
@@ -213,33 +243,7 @@ span{
 
 /* Не получается применить выравнивание по левому краю к файлу статьи */
 
-/* todo: Подключение шрифтоы только одним из способов или в CSS или в html . Этот вариант через Google*/
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 
-/* todo: Если подключаем через внутренний плагин VS Code Google Fonts, то надо убирать лишнии начертания и добавлять хвостик &display=swap*/
-/* @import url(https://fonts.googleapis.com/css?family=Lato:regular,700,900&display=swap); */
-
-@font-face{
-	font-family: "Lato";
-	src: url('../fonts/Lato-Regular.woff2') format("woff2"), url('../fonts/Lato-Regular.woff') format("woff");
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face{
-	font-family: "Lato";
-	src: url('../fonts/Lato-Bold.woff2') format("woff2"), url('../fonts/Lato-Bold.woff') format("woff");
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face{
-	font-family: "Lato";
-	src: url('../fonts/Lato-Black.woff2') format("woff2"), url('../fonts/Lato-Black.woff') format("woff");
-	font-weight: 900;
-	font-style: normal;
-	font-display: swap;
-}
 
 .layout {
 	font-family: "Lato";
